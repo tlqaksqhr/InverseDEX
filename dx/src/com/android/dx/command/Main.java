@@ -94,6 +94,9 @@ public class Main {
                 if (arg.equals("--dex")) {
                     com.android.dx.command.dexer.Main.main(without(args, i));
                     break;
+                } else if (arg.equals("--undex")) {
+                    com.android.dx.command.undexer.Main.main(without(args, i));
+                    break;
                 } else if (arg.equals("--dump")) {
                     com.android.dx.command.dump.Main.main(without(args, i));
                     break;
